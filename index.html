@@ -21,12 +21,39 @@
         <li>Shafaet</li>
         <li>BonoBash</li>
         <li>Jalali</li>
+        <li>Dom de re baba</li>
+        <li>Shanti nai re baba</li>
+        <li>gf nai re mama</li>
       </ul>
     </main>
     <!-- javascript  -->
     <script>
-      console.log("Hellow from javascript");
-      console.log("Hellow bole chole gelo");
+      //   console.log("Hellow from javascript");
+      //   console.log("Hellow bole chole gelo");
+      //   console.log("Document Object Model");
+
+      const student = {
+        name: "Abul mia",
+        id: 121,
+        study: function (subject) {
+          console.log("studying subject: ", subject);
+        },
+      };
+
+      //   document.getElementsByTagName
+      const liCollection = document.getElementsByTagName("li");
+      console.log(liCollection);
+
+      for (const li of liCollection) {
+        console.log(li.innerText);
+      }
+
+      //   all h1 tags
+      const allHeadings = document.getElementsByTagName("h1");
+      for (const heading of allHeadings) {
+        // console.log(heading);
+        console.log(heading.innerText);
+      }
     </script>
     <script src="js/hello.js"></script>
   </body>
