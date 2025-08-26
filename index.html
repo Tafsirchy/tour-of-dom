@@ -9,6 +9,9 @@
       h1 {
         color: red;
       }
+      #food-title {
+        color: green;
+      }
     </style>
   </head>
   <body>
@@ -16,15 +19,32 @@
       <h1>This is my header and no banner</h1>
     </header>
     <main>
-      <h1>Welcome to my DOM</h1>
-      <ul>
-        <li>Shafaet</li>
-        <li>BonoBash</li>
-        <li>Jalali</li>
-        <li>Dom de re baba</li>
-        <li>Shanti nai re baba</li>
-        <li>gf nai re mama</li>
-      </ul>
+      <section>
+        <h1>Welcome to my DOM</h1>
+        <ul>
+          <li>Shafaet</li>
+          <li>BonoBash</li>
+          <li id="band">Jalali</li>
+          <li>Dom de re baba</li>
+          <li>Shanti nai re baba</li>
+          <li>gf nai re mama</li>
+        </ul>
+      </section>
+      <section>
+        <h1 id="food-title">Foods i like</h1>
+        <ul>
+          <li>Rice</li>
+          <li>Potato</li>
+          <li class="foreign">Fish</li>
+          <li class="foreign">Lentis</li>
+          <li class="foreign">Pizza</li>
+          <li>Singara</li>
+          <li class="ok">Samosa</li>
+          <li class="ok">binani</li>
+          <li>inani</li>
+          <li>nani</li>
+        </ul>
+      </section>
     </main>
     <!-- javascript  -->
     <script>
@@ -53,6 +73,25 @@
       for (const heading of allHeadings) {
         // console.log(heading);
         console.log(heading.innerText);
+      }
+
+      //get by id
+      const foodTitleH1 = document.getElementById("food-title");
+      // console.log(foodTitleH1);
+      console.log(foodTitleH1.innerText);
+      foodTitleH1.innerText = "Foods I Love to Eat";
+
+      const bandElement = document.getElementById("band");
+      bandElement.innerText = "janala bhai band";
+
+      // get elements by class name
+      // const foreignElements = document.getElementsByClassName("foreign");
+      const foreignElements = document.getElementsByClassName("ok");
+      console.log(foreignElements);
+
+      for (const element of foreignElements) {
+        // console.log(element.innerText);
+        console.log(element.innerText);
       }
     </script>
     <script src="js/hello.js"></script>
