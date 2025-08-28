@@ -67,6 +67,16 @@
           <li>nani</li>
         </ul>
       </section>
+      <section id="players-container">
+        <h1>Players</h1>
+        <ul>
+          <li>Messi</li>
+          <li>Pele</li>
+          <li>Ronaldo</li>
+          <li>Neymar</li>
+          <!-- <li>dom doma dom</li> -->
+        </ul>
+      </section>
     </main>
     <!-- javascript  -->
     <script>
@@ -78,29 +88,29 @@
         name: "Abul mia",
         id: 121,
         study: function (subject) {
-          console.log("studying subject: ", subject);
+          // console.log("studying subject: ", subject);
         },
       };
 
       //   document.getElementsByTagName
       const liCollection = document.getElementsByTagName("li");
-      console.log(liCollection);
+      // console.log(liCollection);
 
       for (const li of liCollection) {
-        console.log(li.innerText);
+        // console.log(li.innerText);
       }
 
       //   all h1 tags
       const allHeadings = document.getElementsByTagName("h1");
       for (const heading of allHeadings) {
         // console.log(heading);
-        console.log(heading.innerText);
+        // console.log(heading.innerText);
       }
 
       //get by id
       const foodTitleH1 = document.getElementById("food-title");
       // console.log(foodTitleH1);
-      console.log(foodTitleH1.innerText);
+      // console.log(foodTitleH1.innerText);
       foodTitleH1.innerText = "Foods I Love to Eat";
 
       const bandElement = document.getElementById("band");
@@ -109,20 +119,21 @@
       // get elements by class name
       // const foreignElements = document.getElementsByClassName("foreign");
       const foreignElements = document.getElementsByClassName("ok");
-      console.log(foreignElements);
+      // console.log(foreignElements);
 
       for (const element of foreignElements) {
         // console.log(element.innerText);
-        console.log(element.innerText);
+        // console.log(element.innerText);
       }
 
       // query selector all
       const spanElements = document.querySelectorAll("#old-dhaka p span");
 
       for (const span of spanElements) {
-        console.log(span.innerText);
+        // console.log(span.innerText);
       }
     </script>
     <script src="js/hello.js"></script>
+    <script src="js/cssInJS.js"></script>
   </body>
 </html>

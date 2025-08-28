@@ -1,3 +1,12 @@
 ul > li{
     color: purple;
 }
+
+.section-card{
+    background-color: rgb(226, 255, 157);
+    margin-bottom: 20px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
